@@ -30,12 +30,13 @@ def main():
   # Run each of the sorts in different python sessions.
   # The sorts are bubbleSort, bubbleSortEarlyExit, selectionSort, insertionSort, and mergeSort
 
-  print("Begin Sorting %d elements." % numberTerms)
+  print("Begin Sorting %d elements.\n" % numberTerms)
 
+  ##  ---- Bubble Sort ---- ##
   startTime = time.time()
   AllSorts.bubbleSort(orderedList)
   endTime = time.time()
-  elapsedTime = endTime - startTime
+  elapsedTime = time.time()
   print("Ordered list time: %.5f seconds" % elapsedTime)
 
   startTime = time.time()
